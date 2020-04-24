@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.ecommerce</groupId>
+  <artifactId>android-appium</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>android-appium</name>
+  <!-- FIXME change it to the project's website -->
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
+	<dependency>
+	    <groupId>org.junit.jupiter</groupId>
+	    <artifactId>junit-jupiter-api</artifactId>
+	    <version>5.6.1</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-junit</artifactId>
+	    <version>5.5.0</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-java</artifactId>
+	    <version>5.5.0</version>
+	</dependency>
+    <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
+	<dependency>
+	    <groupId>io.cucumber</groupId>
+	    <artifactId>cucumber-picocontainer</artifactId>
+	    <version>5.5.0</version>
+	    <scope>test</scope>
+	</dependency>
+	<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
+	<dependency>
+	    <groupId>io.appium</groupId>
+	    <artifactId>java-client</artifactId>
+	    <version>7.3.0</version>
+	</dependency>
+  </dependencies>
+  <build>
+    <plugins>
+        <plugin>
+            <groupId>com.github.temyers</groupId>
+            <artifactId>cucumber-jvm-parallel-plugin</artifactId>
+            <version>4.2.0</version>
+            <executions>
+                <execution>
+                    <id>generateRunners</id>
+                    <phase>generate-test-sources</phase>
+                    <goals>
+                        <goal>generateRunners</goal>
+                    </goals>
+                    <configuration>
+                        <glue>
+                            <package>se.ff.cc</package>
+                        </glue>
+                        <outputDirectory>target/generated-test-sources/cucumber</outputDirectory>
+                        <featuresDirectory>src/test/resources/</featuresDirectory>
+                        <cucumberOutputDir>target/cucumber-parallel</cucumberOutputDir>
+                        <namingPattern>Parallel{c}IT</namingPattern>
+                        <!-- One of [SCENARIO, FEATURE]. SCENARIO generates one runner per scenario.  FEATURE generates a runner per feature. -->
+                        <parallelScheme>FEATURE</parallelScheme>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-failsafe-plugin</artifactId>
+            <version>2.19.1</version>
+            <executions>
+                <execution>
+                    <id>acceptance-test</id>
+                    <phase>integration-test</phase>
+                    <goals>
+                        <goal>integration-test</goal>
+                    </goals>
+                    <configuration>
+                        <forkCount>10</forkCount>
+                        <reuseForks>true</reuseForks>
+                        <includes>
+                            <include>**/*IT.class</include>
+                        </includes>
+                    </configuration>
+                </execution>
+            </executions>
+        </plugin>
+    </plugins>
+    
+  </build>  
+</project>

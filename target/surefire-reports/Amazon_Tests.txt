@@ -1,0 +1,29 @@
+-------------------------------------------------------------------------------
+Test set: Amazon_Tests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 3.302 s <<< FAILURE! - in Amazon_Tests
+Purchase a TV from the Amazon application(Amazon_Tests)  Time elapsed: 1.171 s  <<< ERROR!
+org.openqa.selenium.SessionNotCreatedException: 
+Unable to create a new remote session. Please check the server log for more details. Original error: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb' in PATH. Please set the ANDROID_HOME or ANDROID_SDK_ROOT environment variables to the correct Android SDK root directory path.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'asthayvas-FVFX703QHV2G', ip: 'fe80:0:0:0:c50:ccb:f6b3:2125%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_242'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb' in PATH. Please set the ANDROID_HOME or ANDROID_SDK_ROOT environment variables to the correct Android SDK root directory path.
+    at getResponseForW3CError (/Users/asthayvas/.nvm/versions/node/v12.16.0/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Users/asthayvas/.nvm/versions/node/v12.16.0/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:392:37)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'asthayvas-FVFX703QHV2G', ip: 'fe80:0:0:0:c50:ccb:f6b3:2125%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_242'
+Driver info: driver.version: AndroidDriver
+Caused by: java.lang.reflect.InvocationTargetException
+Caused by: org.openqa.selenium.WebDriverException: 
+An unknown server-side error occurred while processing the command. Original error: Could not find 'adb' in PATH. Please set the ANDROID_HOME or ANDROID_SDK_ROOT environment variables to the correct Android SDK root directory path.
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'asthayvas-FVFX703QHV2G', ip: 'fe80:0:0:0:c50:ccb:f6b3:2125%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.15.3', java.version: '1.8.0_242'
+Driver info: driver.version: AndroidDriver
+remote stacktrace: UnknownError: An unknown server-side error occurred while processing the command. Original error: Could not find 'adb' in PATH. Please set the ANDROID_HOME or ANDROID_SDK_ROOT environment variables to the correct Android SDK root directory path.
+    at getResponseForW3CError (/Users/asthayvas/.nvm/versions/node/v12.16.0/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/errors.js:804:9)
+    at asyncHandler (/Users/asthayvas/.nvm/versions/node/v12.16.0/lib/node_modules/appium/node_modules/appium-base-driver/lib/protocol/protocol.js:392:37)
+
+Purchase a TV from the Amazon application(Amazon_Tests)  Time elapsed: 1.171 s  <<< ERROR!
+java.lang.NullPointerException
+

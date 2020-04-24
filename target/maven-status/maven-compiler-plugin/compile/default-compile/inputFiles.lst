@@ -1,0 +1,11 @@
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/pageObjects/LoginScreen.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/pageObjects/BaseScreen.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/pageObjects/SearchResultsScreen.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/screenUtils/MobileActions.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/context/TestContext.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/dataProviders/JsonDataReader.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/managers/FileReaderManager.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/testDataTypes/LoginDetails.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/testDataTypes/SearchProduct.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/managers/AndroidDriverManager.java
+/Users/asthayvas/eclipse-workspace/EcommerceTests/src/main/java/managers/PageObjectManager.java
